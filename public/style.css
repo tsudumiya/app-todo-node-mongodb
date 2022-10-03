@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400');
-
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); */
 :root {
     /* 色 */
     /* primary */
@@ -20,6 +20,7 @@
     /* typography */
     --headingFont: 'Inconsolata', monospace;
     --bodyFont: 'Montserrat', sans-serif;
+    /* --bodyFont: 'DM Sans', sans-serif; */
     --smallText: 0.7em;
     /* 残り */
     --backgroundColor: var(--grey-50);
@@ -61,6 +62,7 @@ body {
     box-shadow: var(--shadow-1);
     transition: var(--transition);
     text-transform: capitalize;
+    transition-property: opacity, color, background, box-shadow;
 }
 
 .btn:hover {
@@ -68,7 +70,9 @@ body {
     background: var(--primary-400);
     box-shadow: var(--shadow-2);
 }
-
+h4 {
+    font-weight: initial;
+}
 /*************
     フォーム
 *************/
